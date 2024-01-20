@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vestaboard Image Displayer</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div>
+      <div>
+        <label for="image">Image:</label>
+        <input id="image" type="file" accept="image/*" />
+      </div>
+
+      <button id="send">Send</button>
+    </div>
+
+    <canvas id="canvas" width="22" height="6"></canvas>
+
+    <div>
+      <button id="toggle">Settings</button>
+      <div id="settings" hidden>
+        <label for="key">API Key:</label>
+        <input id="key" type="text" />
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
