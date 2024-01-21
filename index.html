@@ -7,24 +7,28 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div>
+    <main>
+      <h1>Vestaboard Image Displayer</h1>
+
+      <div id="inputs">
+        <div>
+          <label for="image">Image:</label>
+          <input id="image" type="file" accept="image/*" />
+        </div>
+
+        <button id="send">Send</button>
+      </div>
+
+      <canvas id="canvas" width="22" height="6"></canvas>
+
       <div>
-        <label for="image">Image:</label>
-        <input id="image" type="file" accept="image/*" />
+        <button id="toggle">Settings</button>
+        <div id="settings" hidden>
+          <label for="key">API Key:</label>
+          <input id="key" type="text" />
+        </div>
       </div>
-
-      <button id="send">Send</button>
-    </div>
-
-    <canvas id="canvas" width="22" height="6"></canvas>
-
-    <div>
-      <button id="toggle">Settings</button>
-      <div id="settings" hidden>
-        <label for="key">API Key:</label>
-        <input id="key" type="text" />
-      </div>
-    </div>
+    </main>
 
     <script src="./index.js"></script>
   </body>
