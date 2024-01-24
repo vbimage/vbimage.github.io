@@ -10,19 +10,66 @@
     <main>
       <h1>Vestaboard Image Displayer</h1>
 
-      <div id="inputs">
-        <div>
-          <label for="image">Image:</label>
-          <input id="image" type="file" accept="image/*" />
-        </div>
+      <div>
+        <label for="image">Image:</label>
+        <input id="image" type="file" accept="image/*" />
+      </div>
 
+      <div class="controls">
+        <button id="erase">Erase and Fill</button>
+        <button id="render">Render</button>
         <button id="send">Send</button>
       </div>
 
       <canvas id="canvas" width="22" height="6"></canvas>
 
+      <fieldset class="colors">
+        <legend>Color:</legend>
+
+        <div>
+          <input type="radio" id="red" name="color" />
+          <label for="red">Red</label>
+        </div>
+
+        <div>
+          <input type="radio" id="orange" name="color" />
+          <label for="orange">Orange</label>
+        </div>
+
+        <div>
+          <input type="radio" id="yellow" name="color" />
+          <label for="yellow">Yellow</label>
+        </div>
+
+        <div>
+          <input type="radio" id="green" name="color" />
+          <label for="green">Green</label>
+        </div>
+
+        <div>
+          <input type="radio" id="blue" name="color" />
+          <label for="blue">Blue</label>
+        </div>
+
+        <div>
+          <input type="radio" id="violet" name="color" />
+          <label for="violet">Violet</label>
+        </div>
+
+        <div>
+          <input type="radio" id="white" name="color" />
+          <label for="white">White</label>
+        </div>
+
+        <div>
+          <input type="radio" id="black" name="color" checked />
+          <label for="black">Black</label>
+        </div>
+      </fieldset>
+
       <div>
         <button id="toggle">Settings</button>
+
         <div id="settings" hidden>
           <label for="key">API Key:</label>
           <input id="key" type="text" />
